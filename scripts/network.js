@@ -58,7 +58,7 @@ class ServerConnection {
         // hack to detect if deployment or development environment
         const protocol = location.protocol.startsWith('https') ? 'wss' : 'ws';
         const webrtc = window.isRtcSupported ? '/webrtc' : '/fallback';
-        const url ='ws://' + '103.179.56.68:3000' + webrtc;
+        const url ='wss://' + 'api.airshare.web.id' + webrtc;
         // const url = protocol + '://' + location.host + location.pathname + 'server' + webrtc;
         return url;
     }
